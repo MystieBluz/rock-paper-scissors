@@ -7,17 +7,9 @@
 	background: #bb158f;
 	color: #fff;
 }
-/* To center everything in game */
-.game {
-	display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-}
 
-.align-center {
+
+.buttons {
 	display: flex;
     width: 65vw;
     justify-content: space-evenly;
@@ -42,15 +34,5 @@
 
 /* Responsive Design */
 @media screen and (max-width: 612px) {
-	.title{
-		text-align: center;
-	}
-	.game{
-		position: absolute;
-		top: 200px;
-		width: 100vw;
-	}
-	.options{
-		width: 100vw;
-	}
+	
 }
