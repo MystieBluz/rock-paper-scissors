@@ -13,8 +13,8 @@ let gameChoice;
 gameBtns.forEach(gameBtns => gameBtns.addEventListener('click', (e) => {
   playerChoice = e.target.id
   playerDisplay.innerHTML = playerChoice;
-  generateComputerChoice()
-  determineWinner()
+  generateComputerChoice();
+  determineWinner();
 }))
 
 const generateComputerChoice = () => {
