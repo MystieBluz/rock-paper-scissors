@@ -1,8 +1,12 @@
+const selectionButtons = document.querySelectorAll('[data-selection]')
+
+
+
 // User's Choice Function
 const getUserChoice = userInput => {
-  userInput = userInput.toLowerCase();
+  // userInput = userInput.toLowerCase();
 // User's choices for game
-  if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'bomb') {
+  if (userInput.onclick === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'bomb') {
     return userInput;
   }
   else {
@@ -13,7 +17,13 @@ const getUserChoice = userInput => {
 // Testing function 
 // console.log(getUserChoice('Rock'));
 
-
+selectionButtons.forEach(selectionButton => {
+  selectionButton.addEventListener('click', e => {
+    const selectionName = selectionButton.dataset.selection
+    const selection = selection.find(selection => selection.name === selectionName)
+    makeSelection(selection)
+  })
+})
 // Computer's Choice Function
 const getComputerChoice = () => {
   const randomNumber = (Math.floor(Math.random() * 3));
@@ -75,7 +85,7 @@ const determineWinner = (userChoice, computerChoice) => {
 // Function to Start Game and Log results
 const playGame = () => {
   // Must change *user choices* ONLY each try to get various results
-  const userChoice = getUserChoice('scissors');
+  const userChoice = getUserChoice('paper');
   const computerChoice = getComputerChoice();
   console.log('You choose: ' + userChoice);
   console.log('Computer choose: ' + computerChoice);
@@ -84,4 +94,3 @@ const playGame = () => {
 };
 
 playGame();
-
