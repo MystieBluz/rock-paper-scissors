@@ -7,13 +7,14 @@ const gameBtns = document.querySelectorAll('button');
 // Player, Computer and Results variable
 let playerChoice;
 let computerChoice;
-let gameResults;
+let gameChoice;
 
 // Function for game buttons
 gameBtns.forEach(gameBtns => gameBtns.addEventListener('click', (e) => {
   playerChoice = e.target.id
   playerDisplay.innerHTML = playerChoice;
   generateComputerChoice()
+  determineWinner()
 }))
 
 const generateComputerChoice = () => {
@@ -23,45 +24,42 @@ const generateComputerChoice = () => {
   if (randomNumber === 0) {
     computerChoice = 'Rock';
   }
-  else if (randomNumber === 1) {
+  if (randomNumber === 2) {
     computerChoice = 'Paper';
   }
-  else if (randomNumber === 2) {
+  if (randomNumber === 1) {
     computerChoice = 'Scissors';
   }
   computerDisplay.innerHTML = computerChoice;
 }
 
 // Function to determine a winner
-const determineWinner = (playerChoice, computerChoice) => {
-  // Cheat code to always win, lol
-  if (playerChoice === 'bomb') {
-    gameResults = 'You WON!'
-  }
+const determineWinner = () => {
   // If game is Tied
-  if (playerChoice === computerChoice) {
-    gameResults = 'It\'s a TIE!'
+  if (computerChoice === playerChoice) {
+    gameChoice = 'It\'s a TIE!'
   }
-  if (playerChoice === 'rock') {
-    if (computerChoice === 'paper'){
-      gameResults = 'Computer WINS!'
-    } else {
-      gameResults = 'You WON!'
-    }
+  // Remainder of computer and player choices
+  else if (computerChoice === 'Rock' && playerChoice === 'Paper'){
+    gameChoice = 'You WON! :)'
   }
-  if (playerChoice === 'paper') {
-    if (computerChoice === 'scissors') {
-      gameResults = 'Computer WINS!'
-    } else {
-      gameResults = 'You WON!'
-    }
+  else if (computerChoice === 'Rock' && playerChoice === 'Scissors'){
+    gameChoice = 'Computer WINS! :('
   }
-  if (playerChoice === 'scissors') {
-    if (computerChoice === 'rock') {
-      gameResults = 'Computer WINS!'
-    } else {
-      gameResults = 'You WON!'
-   }
-  } 
-  resultDisplay.innerHTML = gameResults;
+  else if (computerChoice === 'Paper' && playerChoice === 'Rock'){
+    gameChoice = 'Computer WINS! :('
+  }
+  else if (computerChoice === 'Paper' && playerChoice === 'Scissors'){
+    gameChoice = 'You WON! :)'
+  }
+  else if (computerChoice === 'Scissors' && playerChoice === 'Paper'){
+    gameChoice = 'Computer Wins! :('
+  }
+  else if (computerChoice === 'Scissors' && playerChoice === 'Rock'){
+    gameChoice = 'You WON! :)'
+  }
+  else if (playerChoice === 'Bomb') {
+    gameChoice = 'YOU WON! :P'
+  }
+  resultDisplay.innerHTML = gameChoice;
 }
