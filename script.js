@@ -1,5 +1,5 @@
 // Variables for display in browser and all the game buttons
-const playerDisplay = document.getElementById('playerDisplay');
+const playerDisplay = document.getElementById('playerDisplay'); 
 const computerDisplay = document.getElementById('computerDisplay');
 const resultDisplay = document.getElementById('result');
 const gameBtns = document.querySelectorAll('button');
@@ -8,6 +8,13 @@ const gameBtns = document.querySelectorAll('button');
 let playerChoice;
 let computerChoice;
 let gameChoice;
+
+// Function for Display Color
+const colorChange = () => {
+  const playerDisplay = document.getElementById('playerDisplay').style.color = 'darkgrey'; 
+  const computerDisplay = document.getElementById('computerDisplay').style.color = 'darkgrey';
+  const resultDisplay = document.getElementById('result').style.color = 'darkgrey';
+}
 
 // Function for game buttons
 gameBtns.forEach(gameBtns => gameBtns.addEventListener('click', (e) => {
