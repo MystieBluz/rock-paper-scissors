@@ -12,14 +12,13 @@
 
 .buttons {
 	display: flex;
-    width: 65vw;
+    width: 100vw;
     justify-content: space-evenly;
     /* justify-content: center; */
-    padding: 15px;
+    padding: 70px;
     flex-wrap: wrap;
-    margin-top: 7.5rem;
-	margin-left: 15rem;
-	/* flex-wrap: wrap; */
+    /* margin-top: 7.5rem;
+	margin-left: 15rem; */
 }
 
 
