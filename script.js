@@ -41,25 +41,25 @@ const determineWinner = () => {
   }
   // Remainder of computer and player choices
   else if (computerChoice === 'Rock' && playerChoice === 'Paper'){
-    gameChoice = 'You WON! :)'
+    gameChoice = 'You WON!'
   }
   else if (computerChoice === 'Rock' && playerChoice === 'Scissors'){
-    gameChoice = 'Computer WINS! :('
+    gameChoice = 'Computer WINS!'
   }
   else if (computerChoice === 'Paper' && playerChoice === 'Rock'){
-    gameChoice = 'Computer WINS! :('
+    gameChoice = 'Computer WINS!'
   }
   else if (computerChoice === 'Paper' && playerChoice === 'Scissors'){
-    gameChoice = 'You WON! :)'
+    gameChoice = 'You WON!'
   }
   else if (computerChoice === 'Scissors' && playerChoice === 'Paper'){
-    gameChoice = 'Computer Wins! :('
+    gameChoice = 'Computer Wins!'
   }
   else if (computerChoice === 'Scissors' && playerChoice === 'Rock'){
-    gameChoice = 'You WON! :)'
+    gameChoice = 'You WON!'
   }
   else if (playerChoice === 'Bomb') {
-    gameChoice = 'YOU WON! :P'
+    gameChoice = 'WINNER!'
   }
   resultDisplay.innerHTML = gameChoice;
 }
