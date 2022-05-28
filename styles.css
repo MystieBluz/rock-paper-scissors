@@ -6,6 +6,7 @@
 	box-sizing: border-box;
 	background: #bb158f;
 	color: #fff;
+	
 }
 
 
@@ -13,9 +14,14 @@
 	display: flex;
     width: 65vw;
     justify-content: space-evenly;
+    /* justify-content: center; */
+    padding: 5px;
+    flex-wrap: wrap;
     margin-top: 7.5rem;
 	margin-left: 15rem;
+	/* flex-wrap: wrap; */
 }
+
 
 /* Styling on all three buttons */
 #Rock, #Paper, #Scissors, #Bomb {
@@ -27,12 +33,13 @@
     border-color: rgb(69, 227, 245);
     /* border: none; */
     cursor: pointer;
-	
 }
+
+
 	
 
 
 /* Responsive Design */
-@media screen and (max-width: 612px) {
+/* @media screen and (max-width: 960px) {
 	
-}
+} */
