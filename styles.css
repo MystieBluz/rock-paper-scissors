@@ -4,18 +4,27 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	background: #bb158f;
+	background: #a81280;
 	color: #fff;
 	
+}
+
+h1 {
+	font-size: 30px;
+}
+
+.col-lg {
+	color: whitesmoke;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 
 .buttons {
 	display: flex;
-    width: 100vw;
+    width: 103vw;
     justify-content: space-evenly;
     /* justify-content: center; */
-    padding: 70px;
+    padding: 55px;
     flex-wrap: wrap;
     /* margin-top: 7.5rem;
 	margin-left: 15rem; */
@@ -25,8 +34,10 @@
 /* Styling on all three buttons */
 #Rock, #Paper, #Scissors, #Bomb {
 	padding: 0.8rem;
-    width: 100px;
-    border-radius: 10px;
+    width: 105px;
+    border-radius: 11px;
+	font-size: 15px;
+	align-content: center;
     background: rgb(98, 0, 128);
     color: white;
     border-color: rgb(69, 227, 245);
