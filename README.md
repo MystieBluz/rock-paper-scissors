@@ -16,7 +16,7 @@
   No installation instructions.
 
   ## Usage 
-  The user must have access to the internet and a browser in order to play the game.
+  The user must have access to the internet and a browser in order to play the game. Click on the live url link to indulge and let me know your thoughts! :)
 
   ## Contributors
   Please see the Questions section.
@@ -35,4 +35,7 @@
   ![Image #1](./Assets/Images/Screen%20Shot%202022-05-28%20at%2010.48.51%20PM.png)
 
   ![Image #2](./Assets/Images/Screen%20Shot%202022-05-28%20at%2010.49.12%20PM.png)
+
+
+
 
