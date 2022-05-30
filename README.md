@@ -18,7 +18,7 @@
   No installation instructions.
 
   ## Usage 
-  The user must have access to the internet and a browser in order to play the game. Click on the game controller icon under project title to indulge and let me know your thoughts! :)
+  The user must have access to the internet and a browser in order to play the game. Click on the word Play next to the game controller icon under project title to indulge and let me know your thoughts! :)
 
   ## Contributors
   Please see the Questions section.
