@@ -31,12 +31,7 @@
  
 
   ## Questions
-<<<<<<< HEAD
-  Should there be any comments and/or inquiries, please feel free to contact me at misty.duhart@gmail.com. Also, you can search for my repo on GitHub by entering MystieBluz or you can view my projects at https://github.com/mystiebluz.
-=======
   Should there be any comments and/or inquiries, please feel free to contact me at mystiebluz@gmail.com. Also, you can search for my repo on GitHub by entering MystieBluz or you can view my projects at https://github.com/mystiebluz.
-  
->>>>>>> b1260b0a7b4ac03529ce8deef7e2b91301ed2288
 
   ## Images of Rock, Paper, Scissors:
   ![Image #1](./Assets/Images/Screen%20Shot%202022-05-28%20at%2010.48.51%20PM.png)
